@@ -21,9 +21,8 @@ const Footer = () => {
         <div className="footer-socials">
           <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><FaFacebookF /></a>
           <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
-          <a href="#"><FaBug /></a> {/* Butterfly replacement */}
           <a href="https://github.com" target="_blank" rel="noopener noreferrer"><FaGithub /></a>
-          <a href="#"><FaDribbble /></a> {/* Ball-like icon */}
+          <a href="dribble-link"><FaDribbble /></a> {/* Ball-like icon */}
         </div>
 
         {/* Row 3: Copyright */}

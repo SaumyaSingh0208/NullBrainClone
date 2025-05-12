@@ -91,13 +91,13 @@ const Teams = () => {
 
         <p className="team-name">{member.name}</p>
         <p className="team-role">
-          <a href="#">{member.role}</a>
+          <a href="role">{member.role}</a>
         </p>
         <div className="team-icons">
-          <a href="#">
+          <a href="twitter-link">
             <FaTwitter />
           </a>
-          <a href="#">
+          <a href="https://github.com/SaumyaSingh0208/">
             <FaGithub />
           </a>
         </div>
