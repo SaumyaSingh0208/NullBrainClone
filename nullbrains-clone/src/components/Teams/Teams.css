@@ -16,7 +16,7 @@
     text-align: left;
     font-size: 28px;
     font-weight: bold;
-    margin-bottom: 30px; /* adds space below the heading */
+    margin-bottom: 30px;
   }
   
   .teams-grid {
@@ -33,89 +33,85 @@
     gap: 40px;
     justify-items: center;
   } */
-  
-  .team-card {
-    text-align: center;
-    position: relative;
-  }
 
   .team-image-wrapper {
-    position: relative;
     width: 140px;
     height: 140px;
-    margin: 0 auto 16px;
+    position: relative;
   }
   
-  /* Outer full light-colored circle */
-  .outer-circle {
-    width: 140px;
-    height: 140px;
-    border-radius: 50%;
-    position: relative;
+  .background-arc {
+    width: 100%;
+    height: 100%;
+    border-radius: 100% 0 100% 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
   }
   
-  /* Inner dark-colored circle with image */
-  .inner-circle {
-    width: 100px;
-    height: 100px;
+  .outer-circle {
+    width: 110px;
+    height: 110px;
     border-radius: 50%;
-    overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
     z-index: 2;
   }
   
+  .inner-circle {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
   .inner-circle img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 50%;
-  }
-  
-  /* Triangle pointer */
-  .quarter-triangle {
-    position: absolute;
-    top: -10px;
-    right: -10px;
-    width: 0;
-    height: 0;
-    border-top: 30px solid;
-    border-left: 30px solid transparent;
-    transform: rotate(45deg);
-    z-index: 1;
-  }
-
-  .quarter-blob {
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    top: -5px;
-    right: 20px;
-    background-color: #FECD2C;
-    border-top-right-radius: 100%;
-    transform: rotate(180deg);
-    z-index: 1;
   }
   
   
-  
+  .team-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 6px; /* controls spacing between name, role, icons */
+  }
   
   .team-name {
+    margin-top: 10px;
     font-weight: 600;
-    font-size: 16px;
-    margin-bottom: 6px;
+    font-size: 1rem;
+    color: #333;
   }
   
   .team-role a {
-    color: #5b8def;
+    font-size: 0.9rem;
+    color: #666;
     text-decoration: none;
-    font-size: 14px;
-    font-weight: 500;
   }
+  
+  .team-icons {
+    display: flex;
+    gap: 10px;
+    margin-top: 4px;
+  }
+  
+  .team-icons a {
+    color: #333;
+    font-size: 1.1rem;
+  }
+  
+  
   
   .team-role a:hover {
     text-decoration: underline;
@@ -123,13 +119,6 @@
   
   .team-icons {
     margin-top: 10px;
-  }
-  
-  .team-icons a {
-    margin: 0 8px;
-    color: #888;
-    font-size: 18px;
-    transition: color 0.3s ease;
   }
   
   .team-icons a:hover {

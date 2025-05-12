@@ -65,47 +65,47 @@ const teamMembers = [
 const Teams = () => {
   return (
     <section className="teams-container">
-      <p className="teams-label">OUR TEAM</p>
-      <h2 className="teams-heading">
-        An incredible team of amazing individuals
-      </h2>
-      <div className="teams-grid">
-        {teamMembers.map((member, index) => (
-          <div className="team-card" key={index}>
-            <div className="team-image-wrapper">
-              <div
-                className="outer-circle"
-                style={{ backgroundColor: member.lightColor }}
-              >
-                <div
-                  className="inner-circle"
-                  style={{ backgroundColor: member.color }}
-                >
-                  <img src={member.image} alt={member.name} />
-                </div>
-                <div
-                  className="quarter-blob"
-                  style={{ backgroundColor: member.lightColor }}
-                />
-              </div>
-            </div>
-
-            <p className="team-name">{member.name}</p>
-            <p className="team-role">
-              <a href="#">{member.role}</a>
-            </p>
-            <div className="team-icons">
-              <a href="#">
-                <FaTwitter />
-              </a>
-              <a href="#">
-                <FaGithub />
-              </a>
-            </div>
-          </div>
-        ))}
+  <p className="teams-label">OUR TEAM</p>
+  <h2 className="teams-heading">
+    An incredible team of amazing individuals
+  </h2>
+  <div className="teams-grid">
+    {teamMembers.map((member, index) => (
+      <div className="team-card" key={index}>
+        <div className="team-image-wrapper">
+  <div
+    className="background-arc"
+    style={{ backgroundColor: member.lightColor }}
+  >
+    <div
+      className="outer-circle"
+      style={{ backgroundColor: member.color }}
+    >
+      <div className="inner-circle">
+        <img src={member.image} alt={member.name} />
       </div>
-    </section>
+    </div>
+  </div>
+</div>
+
+
+        <p className="team-name">{member.name}</p>
+        <p className="team-role">
+          <a href="#">{member.role}</a>
+        </p>
+        <div className="team-icons">
+          <a href="#">
+            <FaTwitter />
+          </a>
+          <a href="#">
+            <FaGithub />
+          </a>
+        </div>
+      </div>
+    ))}
+  </div>
+</section>
+
   );
 };
 
