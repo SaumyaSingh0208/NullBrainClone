@@ -1,0 +1,126 @@
+/* ===== Navbar Container ===== */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 8%;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #111;
+  }
+  
+  /* ===== Center: Nav Links + Search Bar ===== */
+  .navbar-center {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+  
+  .navbar-center nav ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar-center nav ul li a {
+    text-decoration: none;
+    font-weight: 500;
+    color: #555;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-center nav ul li a:hover {
+    color: #5a3dff;
+  }
+  
+  /* ===== Search Bar Styles ===== */
+  .search-bar {
+    display: flex;
+    align-items: center;
+    background-color: #f2f2f2;
+    border-radius: 30px;
+    padding: 5px 10px;
+  }
+  
+  .search-bar input {
+    border: none;
+    background: transparent;
+    padding: 6px 10px;
+    outline: none;
+    font-size: 14px;
+    width: 150px;
+  }
+  
+  .search-bar button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    color: #5a3dff;
+    font-size: 16px;
+  }
+  
+  /* ===== Auth Buttons ===== */
+  .auth-buttons {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .auth-buttons .signin {
+    background: none;
+    border: none;
+    color: #555;
+    font-weight: 500;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .auth-buttons .signin:hover {
+    color: #5a3dff;
+  }
+  
+  .auth-buttons .signup {
+    background-color: #5a3dff;
+    color: #fff;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .auth-buttons .signup:hover {
+    transform: scale(1.05);
+    background-color: #4a2fd4;
+  }
+  
+  /* ===== Responsive ===== */
+  @media (max-width: 768px) {
+    .navbar {
+      padding: 15px 5%;
+      flex-wrap: wrap;
+    }
+  
+    .navbar-center {
+      gap: 20px;
+    }
+  
+    .search-bar input {
+      width: 100px;
+    }
+  
+    .auth-buttons .signup {
+      padding: 6px 16px;
+    }
+  }
+  

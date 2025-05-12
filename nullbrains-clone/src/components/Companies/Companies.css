@@ -1,0 +1,47 @@
+/* ===== Companies Section ===== */
+.companies {
+    padding: 60px 20px;
+    background-color: #fff;
+    text-align: center;
+  }
+  
+  /* ===== Heading ===== */
+  .companies-heading {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #111;
+    margin-bottom: 40px;
+  }
+  
+  /* ===== Company Logos Wrapper ===== */
+  .companies-logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+  }
+  
+  /* ===== Individual Logo ===== */
+  .company-logo img {
+    max-width: 120px;
+    height: auto;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+  }
+  
+  .company-logo img:hover {
+    opacity: 1;
+  }
+  
+  /* ===== Responsive ===== */
+  @media (max-width: 768px) {
+    .company-logo img {
+      max-width: 80px;
+    }
+  
+    .companies-heading {
+      font-size: 1.5rem;
+    }
+  }
+  
